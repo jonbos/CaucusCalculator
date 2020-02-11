@@ -59,7 +59,6 @@ public class Caucus {
 	}
 
 	public boolean getIsValid() {
-		this.validate();
 		return isValid;
 	}
 
