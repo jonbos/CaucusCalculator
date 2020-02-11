@@ -29,7 +29,7 @@ public class testCaucus {
 	public void testIsNotValidIfMoreVotesThanParticipants() {
 		c.setNumParticipants(1);
 		c.setIsValid(true);
-		c.addCandidate(new Candidate("cheat", 2));
+		c.addCandidate(new Candidate("A", 2));
 		assertFalse(c.getIsValid());
 		assertNotEquals("", c.getErrors());
 	}
@@ -39,28 +39,28 @@ public class testCaucus {
 		c.setNumParticipants(47);
 		c.setNumDelegates(8);
 		c.setIsValid(true);
-		c.addCandidate(new Candidate("cheat", 2));
+		c.addCandidate(new Candidate("A", 2));
 		assertFalse(c.getIsValid());
 		assertNotEquals("", c.getErrors());
 	}
+
 	@Test
 	public void testDelegateCalc() {
 		c.setNumDelegates(8);
 		c.setNumParticipants(47);
-		
-		Candidate bern = new Candidate("Bernie", 18);
-		Candidate pete = new Candidate("Pete", 17);
-		Candidate amy = new Candidate("Amy", 12);
 
-		c.addCandidate(bern);
-		c.addCandidate(pete);
-		c.addCandidate(amy);
-		
+		Candidate x = new Candidate("X", 18);
+		Candidate y = new Candidate("Y", 17);
+		Candidate z = new Candidate("Z", 12);
+
+		c.addCandidate(x);
+		c.addCandidate(y);
+		c.addCandidate(z);
+
 		c.calculateDelegates();
-		
+
 		assertEquals(3, c.getCandidates().get(0).getDelegates());
 		assertEquals(3, c.getCandidates().get(1).getDelegates());
 		assertEquals(2, c.getCandidates().get(2).getDelegates());
-
 	}
 }

@@ -1,28 +1,25 @@
 package controller;
 
 import java.io.IOException;
-import java.io.PrintWriter;
-
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import model.Candidate;
 import model.Caucus;
 
 /**
- * Servlet implementation class Calculator
+ * Servlet implementation class GetResults
  */
-@WebServlet("/GetCalculator")
-public class GetCalculator extends HttpServlet {
+@WebServlet("/GetResults")
+public class GetResults extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	/**
 	 * @see HttpServlet#HttpServlet()
 	 */
-	public GetCalculator() {
+	public GetResults() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
@@ -33,8 +30,9 @@ public class GetCalculator extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		String numCandidates = request.getParameter("numCandidates");
-		request.setAttribute("numCandidates", numCandidates);
-		getServletContext().getRequestDispatcher("/calculator.jsp").forward(request, response);
+		// TODO Auto-generated method stub
+		Caucus caucus = CaucusUtil.getCaucusFromHttpRequest(request);
+		request.setAttribute("caucus", caucus);
+		getServletContext().getRequestDispatcher("/results.jsp").forward(request, response);
 	}
 }

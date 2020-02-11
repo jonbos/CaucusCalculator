@@ -33,7 +33,10 @@ body {
 	</section>
 	<div class="container">
 		<section class="column is-three-fifths is-offset-one-fifth">
-			<form method="POST" action="GetCalculator">
+			<!-- 			<form method="POST" action="GetCalculator">
+ -->
+			<form method="POST" action="GetResults">
+
 				<div class="box ">
 					<div class="field">
 						<label class="label">Precinct Name</label>
