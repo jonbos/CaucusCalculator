@@ -34,7 +34,7 @@
 									placeholder="Candidates">
 							</div>
 							<p class="control">
-								<button type="submit" class="button">Calculate</button>
+								<button type="submit" class="button has-background-grey-lighter">Calculate</button>
 							</p>
 						</div>
 					</form>
