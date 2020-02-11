@@ -6,19 +6,21 @@
 <link rel="stylesheet"
 	href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
 <meta charset="UTF-8">
-<title>Caucus Calculator</title>
+<title>Caucus Calculator | HOME</title>
 <style>
-	body{
-		min-height: 100vh;
-	}
+body {
+	min-height: 100vh;
+}
 </style>
 
 </head>
 <body class="has-background-grey-lighter">
-	<section class="hero is-dark">
+	<section class="hero is-dark is-small">
 		<div class="hero-body">
-			<div class="container">
-				<h1 class="title">Caucus Calculator</h1>
+			<div class="level">
+				<div class="level-left">
+					<h1 class="title">Caucus Calculator</h1>
+				</div>
 			</div>
 		</div>
 	</section>

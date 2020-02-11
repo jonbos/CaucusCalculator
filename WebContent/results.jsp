@@ -10,7 +10,7 @@
 	href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
 
 <meta charset="UTF-8">
-<title>CAUCUS RESULTS</title>
+<title>Caucus Calculator | RESULTS</title>
 <style>
 body {
 	min-height: 100vh;
@@ -62,9 +62,7 @@ body {
 									<td><c:out value="${candidate.getDelegates()}" /></td>
 								</tr>
 							</c:forEach>
-
 						</tbody>
-
 					</table>
 				</div>
 			</section>
@@ -81,9 +79,7 @@ body {
 					</h2>
 				</div>
 			</section>
-
 		</c:otherwise>
-
 	</c:choose>
 </body>
 </html>

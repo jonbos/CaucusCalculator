@@ -10,7 +10,7 @@
 	href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
 
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Caucus Calculator | CALCULATOR</title>
 <style>
 body {
 	min-height: 100vh;
@@ -33,8 +33,6 @@ body {
 	</section>
 	<div class="container">
 		<section class="column is-three-fifths is-offset-one-fifth">
-			<!-- 			<form method="POST" action="GetCalculator">
- -->
 			<form method="POST" action="GetResults">
 
 				<div class="box ">
@@ -94,7 +92,6 @@ body {
 							</div>
 						</div>
 					</div>
-
 				</c:forEach>
 				<input type="hidden" name=count value=${numCandidates } />
 				<button class="button" type="submit">Submit</button>
