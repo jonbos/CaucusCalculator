@@ -1,4 +1,4 @@
-###Objective
+# Objective
 Demonstrate use of Java + JSP, JSTL, Maven and Tomcat. This project calculates delegate allocation for a single caucus precinct.
 
 
